@@ -61,23 +61,7 @@ class compression:
                     cvf=2
                     cvf1=0
                     s=""
-                    e2=0
-                    e3=2
-                    e4=""
-                    c=2
-                    sw=2
-                    elw=0
-                    sw1=0
-                    sw2=0
-                    sw3=0
-                    sw5=0
-                    sw4=0
-                    sw6=0
-                    sw7=0
-                    n1=0
-                    n=0
-                    n2=0
-                    n3=0
+                    
                  
                     size_data3=""
                     size_data2=""
@@ -201,7 +185,7 @@ class compression:
                                 size_data12=""
                                 size_data19=""
                                 size_data10=size_data3
-                                predict=-1
+                           
                                 
                                 long_block=16
                                
@@ -209,7 +193,7 @@ class compression:
                                 
                                 
                                 times_of_times=0
-                                Where4=0
+                           
                                 str_find=""
                           
                                 
@@ -218,13 +202,12 @@ class compression:
   
                                 if cvf1==1:
                                     times_compression=0  
-                                    compress_no=0
-                                    compress_yes=0
+                                  
                                     long2=len(size_data3)
                                     Deep=long2//28
                                     times2=Deep
                                     long_block=block_size_long
-                                    Where5=0
+                               
                                     before_block=0
                                     check_size_block=0
                                     before_block_After_check=0
@@ -236,9 +219,9 @@ class compression:
                                 
                                     Times6=0
                                     
-                                    block_compression2=0
+                                   
                                     
-                                    start=-1
+                                  
                                     
                                     Find_guess=0
                                     while Find_guess!=1:
@@ -256,10 +239,10 @@ class compression:
                                                      
                                   
                                                  
-                                                    start=0
+                                                
                                                     blocks=long_block
                                                     size_compress=63
-                                                    end=blocks
+                                                 
                                                     
                                                      
                                                     block=0
@@ -505,27 +488,12 @@ class compression:
                     
                     
                     nac=len(nameas)
-                    sw1=0
-                    sw2=0
+                   
                     countraz=0
                     cvf=2
                     cvf1=0
                     s=""
-                    e2=0
-                    e3=2
-                    e4=""
-                    c=2
-                    sw=2
-                    elw=0
-                    sw3=0
-                    sw4=0
-                    sw5=0
-                    sw6=0
-                    sw7=0
-                    n=0
-                    n1=0
-                    n2=0
-                    n3=0
+                    
                  
                     size_data3=""
                     size_data2=""
@@ -659,13 +627,12 @@ class compression:
 
 
                                     times_compression=0  
-                                    compress_no=0
-                                    compress_yes=0
+                                 
                                     long2=len(size_data3)
                                     Deep=long2//28
                                     times2=Deep
                                     long_block=1023
-                                    Where5=0
+                                  
                                     before_block=0
                                     check_size_block=0
                                     before_block_After_check=0
