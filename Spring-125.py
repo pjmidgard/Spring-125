@@ -792,7 +792,10 @@ class compression:
                              
                                     jl=binascii.unhexlify(qqwslenf % n)
                                    
-                                   
+                                    if data3[0:1]==b'\x00':
+                                    	import brotlicffi
+                                    	jl= brotlicffi.decompress(jl)
+
                                     
                                     data2=jl
 
