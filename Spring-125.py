@@ -553,6 +553,11 @@ class compression:
 
                         data=data3[1:]
 
+                        
+                        
+                         
+                        import brotlicffi
+                        data= brotlicffi.decompress(data)
                         data1=data
 
                         if len(data)==0:
@@ -870,18 +875,16 @@ class compression:
                                     qqwslenf="%0"+qqwslenf+"x"
                              
                                     jl=binascii.unhexlify(qqwslenf % n)
-                                    if data3[0:1]=="b'\x00":
-                                    	import brotlicffi
-                                    	jl= brotlicffi.decompress(jl)
+                                   
                                    
                                     
                                     data2=jl
 
-                                    if data3[0:1]=="b'\xff'":
+                                    if data3[0:1]==b'\xff':
                                         jl=data1
 
 
-                                    elif data3[0:1]=="b'\x00":
+                                    elif data3[0:1]==b'\x00':
                                         jl=data2
                                
                                     sssssw=len(jl) 
