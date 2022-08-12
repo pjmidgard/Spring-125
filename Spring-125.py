@@ -10,17 +10,12 @@ class compression:
 
     def cryptograpy_compression(self):
 
-                
-                
                 self.name = "Author: Jurijus pacalovas"
 
                 print(self.name)
                 
                 if namez=="c":
 
-
-                    
-                   
                     name = input("What is name of file? ")
                     if os.path.exists(name):
                             print('Path is exists!')
@@ -33,21 +28,14 @@ class compression:
                     namea="file.W"
                     namem=""
                     namema="?"
-                    Portal=2
+                
                     assxw=0
-                    blockw=5
-                    blockw1=4
+               
                     nameas=name
                     nac=len(nameas)
 
                     long=len(name)
 
-                    
-
-                    
-                    
-                   
-                    
                     Deep_long=120
                     Deep_long_All=Deep_long*15
                     block_size_long=15
@@ -57,33 +45,16 @@ class compression:
                 
                     nac=len(nameas)
                     
-                    countraz=0
-                    cvf=2
+               
+                  
                     cvf1=0
                     s=""
-                    e2=0
-                    e3=2
-                    e4=""
-                    c=2
-                    sw=2
-                    elw=0
-                    sw1=0
-                    sw2=0
-                    sw3=0
-                    sw5=0
-                    sw4=0
-                    sw6=0
-                    sw7=0
-                    n1=0
-                    n=0
-                    n2=0
-                    n3=0
-                 
+              
                     size_data3=""
                     size_data2=""
 
                     sscvf=0
-                    
+                    countraz=1
                     qqqqwzl=0
 
                     block=1
@@ -130,9 +101,9 @@ class compression:
                             aas1=0
                             a1=0
 
-                            cvf=cvf+1
+                          
                             
-                            countraz=countraz+1
+                            
 
                             with open(nameas, "ab") as f2:
                                 if countraz==1:
@@ -201,7 +172,7 @@ class compression:
                                 size_data12=""
                                 size_data19=""
                                 size_data10=size_data3
-                                predict=-1
+                               
                                 
                                 long_block=16
                                
@@ -209,7 +180,7 @@ class compression:
                                 
                                 
                                 times_of_times=0
-                                Where4=0
+                              
                                 str_find=""
                           
                                 
@@ -217,28 +188,22 @@ class compression:
                                 cvf1=1
   
                                 if cvf1==1:
-                                    times_compression=0  
-                                    compress_no=0
-                                    compress_yes=0
+                                  
                                     long2=len(size_data3)
-                                    Deep=long2//28
-                                    times2=Deep
+                                   
                                     long_block=block_size_long
-                                    Where5=0
-                                    before_block=0
-                                    check_size_block=0
-                                    before_block_After_check=0
+                                    
 
 
-                                    size_data_not_compress=size_data3
-                                    #print(size_data_not_compress)
+                                    
+                                   
                                     
                                 
                                     Times6=0
                                     
-                                    block_compression2=0
+                                   
                                     
-                                    start=-1
+                                   
                                     
                                     Find_guess=0
                                     while Find_guess!=1:
@@ -256,10 +221,10 @@ class compression:
                                                      
                                   
                                                  
-                                                    start=0
+                                                
                                                     blocks=long_block
-                                                    size_compress=63
-                                                    end=blocks
+                                                 
+                                                  
                                                     
                                                      
                                                     block=0
@@ -268,19 +233,7 @@ class compression:
                                                     #predict=predict+1
                                                     #if predict==16:
                                                         #predict=0
-                                                    
-                                                    
-                                                        
-                                                        
-                                                    
-                                                    
-                                                   
-
-                                                    
-
-                                                   
-  
-                                                    
+                                            
                                                     long=len(size_data3)
                                                     #print(long)
                                                     
@@ -355,7 +308,7 @@ class compression:
                                                                                 block=block+blocks
                                                                                 #print(block)
                                                          
-                                                    times_compression=times_compression+1
+                                                    
                                                     
                                                     #print(times_compression)
                                                     
@@ -465,15 +418,15 @@ class compression:
                     else:
                             print('Path is not exists!')
                             raise SystemExit
-                    Portal=2
+               
                     namea="file.W"
                     namem=""
                     namema="?"
                     Deep=0
                  
                     assxw=0
-                    blockw=5
-                    blockw1=4
+               
+                  
                     nameas=name
                     nac=len(nameas)
                     name_cut=""
@@ -505,32 +458,16 @@ class compression:
                     
                     
                     nac=len(nameas)
-                    sw1=0
-                    sw2=0
-                    countraz=0
-                    cvf=2
+                    
+                    
                     cvf1=0
                     s=""
-                    e2=0
-                    e3=2
-                    e4=""
-                    c=2
-                    sw=2
-                    elw=0
-                    sw3=0
-                    sw4=0
-                    sw5=0
-                    sw6=0
-                    sw7=0
-                    n=0
-                    n1=0
-                    n2=0
-                    n3=0
+                    
                  
                     size_data3=""
                     size_data2=""
 
-                    sscvf=0
+                    countraz=1
                     
                     qqqqwzl=0
 
@@ -555,9 +492,9 @@ class compression:
 
                         
                         
-                        if data3[0:1]==b'\xff':
-                        	import brotlicffi
-                        	data= brotlicffi.decompress(data)
+                        if data3[0:1]==b'\x00':
+                            import brotlicffi
+                            data= brotlicffi.decompress(data)
                         data1=data
 
                         if len(data)==0:
@@ -579,9 +516,9 @@ class compression:
                             aas1=0
                             a1=0
 
-                            cvf=cvf+1
+                           
                             
-                            countraz=countraz+1
+                          
 
                             with open(nameas, "ab") as f2:
                                 if countraz==1:
@@ -658,32 +595,26 @@ class compression:
                                         size_data3=size_data3[1:]
 
 
-                                    times_compression=0  
-                                    compress_no=0
-                                    compress_yes=0
+                                   
                                     long2=len(size_data3)
-                                    Deep=long2//28
-                                    times2=Deep
+                                   
                                     long_block=1023
-                                    Where5=0
-                                    before_block=0
-                                    check_size_block=0
-                                    before_block_After_check=0
+                                
 
 
-                                    size_data_not_compress=size_data3
+                                    
                                     times_of_times=0
                                     #print(size_data_not_compress)
                                     
                                 
                                     
                                     
-                                    block_compression2=0
+                                    
                                     size_data6=""
                                     Times6=0
                                     
-                                    start=-1
-                                    Left_Right=0
+                               
+                                  
                                     Find_guess=0
                                     times_of_times1=0
                                         
@@ -695,13 +626,13 @@ class compression:
                                                    
                                                     long_block=block_size_long
                                                     #print(long_block)
-                                                    start=0
+                                               
                                                    
                                                     blocks=long_block
                                                     long2=len(size_data3)
                                                    
-                                                    size_compress=63
-                                                    end=blocks
+                                                  
+                                                  
                                                     
                                                      
                                                     block=0
@@ -710,19 +641,7 @@ class compression:
                                                     #predict=predict+1
                                                     #if predict==16:
                                                         #predict=0
-                                                    
-                                                    
-                                                        
-                                                        
-                                                    
-                                                    
-                                                    Find=1
-
-                                                    Left_Right=Left_Right+1
-
-                                                    if Left_Right==2:
-                                                        Left_Right=1
-                                                    
+                                                 
                                                     long=len(size_data3)
                                                     #print(long)
                                                     block2=0
@@ -821,16 +740,13 @@ class compression:
                                                                                     block=long
                                                                                 #print(block)
                                                          
-                                                    times_compression=times_compression+1
+                                                    
                                                     
                                                     #print(times_compression)
                                                     
                                                     
                                                     size_data3=size_data6
-                                                    
-                                                    Where4=0
-                                                    
-                                                    
+                                              
                                                     #print(len(size_data6))
                                                     size_data6=""
                                                     times_of_times1=times_of_times1+1
@@ -875,9 +791,7 @@ class compression:
                                     qqwslenf="%0"+qqwslenf+"x"
                              
                                     jl=binascii.unhexlify(qqwslenf % n)
-                                    if data3[0:1]==b'\x00':
-                                    	import brotlicffi
-                                    	jl= brotlicffi.decompress(jl)
+                                   
                                    
                                     
                                     data2=jl
