@@ -234,12 +234,6 @@ class compression:
                                                     long_block=block_size_long
                                                     long2=len(size_data3)
                                                     
-                                                    
-                                                       
-                                                     
-                                  
-                                                 
-                                                
                                                     blocks=long_block
                                                     size_compress=63
                                                  
@@ -251,18 +245,6 @@ class compression:
                                                     #predict=predict+1
                                                     #if predict==16:
                                                         #predict=0
-                                                    
-                                                    
-                                                        
-                                                        
-                                                    
-                                                    
-                                                   
-
-                                                    
-
-                                                   
-  
                                                     
                                                     long=len(size_data3)
                                                     #print(long)
