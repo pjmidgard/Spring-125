@@ -395,12 +395,12 @@ class compression:
                                     
                                     data2=jl
 
-                                    if len(data2)<len(data1):
+                                    if len(data2)<=len(data1):
                                         jl=b'\x00'+data2
                                        
 
 
-                                    elif len(data1)<len(data2):
+                                    elif len(data1)<=len(data2):
                                         jl=b'\xff'+data1
                                         
                                 
