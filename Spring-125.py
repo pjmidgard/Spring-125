@@ -12,7 +12,7 @@ class compression:
 
                 
                 
-                self.name = "Author: Jurijus pacalovas"
+                self.name = "Author: Jurijus Pacalovas"
 
                 print(self.name)
                 
